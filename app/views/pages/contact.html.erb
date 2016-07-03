@@ -1,7 +1,31 @@
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="http://www.jo.zain.com/english/media/cer/zinc%20partners/pages/default.aspx">Partnering up with Zain</a></li>
+  <li><a href="http://thecodingcircle.com">The Coding Circle</a></li>
+  <li class="divider"></li>
+  <li><a href="/pages/contact">Location</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper pink">
+    <a href="#!" class=><img src = "https://www.mylabdfw.com/images/FINAL%20MyLab%20Logo%20His.png" ; style="width: 85px; height: 100 px"></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="http://htmlcolorcodes.com">The color codes</a></li>
+      <li><a href="http://materializecss.com/color.html">Coding Guide</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Information<i class="material-icons right"></i></a></li>
+    </ul>
+  </div>
+</nav>
 
+
+<center>
+<h1 style= "color: purple;  font-family: Cursive "> Contact Us ! </h1>
+</center>
+<h3 style= "color:#e91e63" > Our Location: </h3>
+<center>
     <style>
       #map {
-        width: 100%;
+        width: 400px;
         height: 400px;
       }
     </style>
@@ -15,10 +39,64 @@
               zoom: 16
           });
 
-          
-        }
+          var marker = new google.maps.Marker({
+            map: map,
+            position: {lat: 31.962914, lng: 35.844741},
+            title: 'Our location in King Hussien park in Amman, Jorden!'
+          });
+
+          var infowindow = new google.maps.InfoWindow({
+          content: "Our location in King Hussien park in Amman, Jordan!"
+        });
+          marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+          }
+        
 
     </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN31jVD6Rc-t4vXjE5UBQRn4W2np0k_-A&callback=initMap">
     </script>
+
+
+
+<div class="row">
+
+      <div class="col s4" style="text-align:center;">
+        <i class="material-icons large blue-text text-darken-4">phone</i>
+        <p style="color: darkblue">Through the use of my phone number, you will be able to caontact me through messeges or calls, this will allow you to ask me any questions about the webapp and where to go to take the class! my phone number is "0777712927".
+      </div>
+      <div class="col s4" style="text-align:center;">
+         <i class="material-icons large blue-text text-darken-4">email</i>
+        <p style="color: darkblue"> Also, you can email me on "jad_jihayel@hotmail.com" to ask me any questions you have, or so that you can send me a preview of the students skills so that we will know which group to put him in!
+      </div>
+      <div class="col s4" style="text-align:center;">
+        <i class="material-icons large blue-text text-darken-4">perm_identity</i>
+        <p style="color: darkblue"> Many new careers will be available for those who specialize in computer science and especially programming and coding. These new careers are known for making the workers one of the wealthiest people in the world and this can be possible if this course is taken.
+      </div>
+
+    </div>
+
+
+
+
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l8 s20">
+                <a class="waves-effect waves-light btn right" href="http://localhost:3000/pages/about">AboutUs page</a>
+                <br> </br>
+                 <a class="waves-effect waves-light btn right" href="http://localhost:3000">Mylab Videos</a>
+              </div>
+            
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
